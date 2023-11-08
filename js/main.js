@@ -41,10 +41,16 @@ function creaGriglia() {
 
     
     for (let i = 1; i <= numCell; i++) {
+
         
         let cell = creaQuadrato(i);
         cell.innerHTML= i;
         grid.appendChild(cell);
+
+        if (bombe.includes(i)) {
+            cell.classList.add("bomb");
+        }
+        
     
     };
 }
