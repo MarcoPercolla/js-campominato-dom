@@ -7,7 +7,12 @@ const difficultyInput = document.getElementById("difficulty");
 let bombe = [];
 while (bombe.length<16) {
     let posizioneBomba = getRandom(1, numCell);
-    bombe.push(posizioneBomba)
+    if (!(bombe.includes(posizioneBomba))) {
+        bombe.push(posizioneBomba);
+    }else{
+        console.log("doppione");
+    }
+    
 }
 console.log(bombe)
 
@@ -36,8 +41,7 @@ function creaQuadrato(number) {
 
             cell.classList.toggle("minato");
             
-        }
-        
+        } 
 
     });
 
