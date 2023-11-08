@@ -5,7 +5,7 @@ const difficultyInput = document.getElementById("difficulty");
 
 
 
-function Quadrato(number) {
+function creaQuadrato(number) {
 
     const cell = document.createElement("div");
     if (difficultyInput.value == "medium") {
@@ -30,16 +30,31 @@ function Quadrato(number) {
     return cell;
 }
 
-runBtn.addEventListener("click", function () {
-
-    grid.innerHTML= "";
+function creaGriglia() {
     
-
     for (let i = 1; i <= numCell; i++) {
         
-        let cell = Quadrato(i);
+        let cell = creaQuadrato(i);
         cell.innerHTML= i;
         grid.appendChild(cell);
     
     };
+}
+
+runBtn.addEventListener("click", function () {
+
+    grid.innerHTML= "";
+    creaGriglia();
+
+    // for (let i = 1; i <= numCell; i++) {
+        
+    //     let cell = creaQuadrato(i);
+    //     cell.innerHTML= i;
+    //     grid.appendChild(cell);
+    
+    // };
 })
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
