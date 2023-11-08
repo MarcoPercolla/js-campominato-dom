@@ -9,8 +9,6 @@ while (bombe.length<16) {
     let posizioneBomba = getRandom(1, numCell);
     if (!(bombe.includes(posizioneBomba))) {
         bombe.push(posizioneBomba);
-    }else{
-        console.log("doppione");
     }
     
 }
