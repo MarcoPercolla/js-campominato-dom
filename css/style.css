@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #222;
+    color: white;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: orange;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer{
+    height: 4rem;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+}
+
+.runBtn{
+    height: 2rem;
+    width: 5rem;
+    margin: 0 1rem;
+}
+
+.navActions{
+    display: flex;
+    align-items: center;
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+
+}
+
+.navLogo img{
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 0 1rem;
+    object-fit: cover;
+}
+
+main{
+    height: calc(100vh - 8rem);
+    display: flex;
+    align-items: center;
+}
+
+#grid {
+    
+    color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    
+}
+
+.square {
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squareMedium{
+    height: calc(100% / 9 );
+    width: calc(100% / 9 );
+}
+
+.squareHard{
+    
+    height: calc(100% / 7 );
+    width: calc(100% / 7 );
+}
+
+.squareEasy{
+    
+    height: calc(100% / 10 );
+    width: calc(100% / 10 );
+}
+
+.minato{
+    
+    color: orangered;
+    background-image:  url(https://steamuserimages-a.akamaihd.net/ugc/924808077591780188/9AF4F7C9FA32E495E75FA1EFE23E22E3A7DC8929/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
