@@ -30,7 +30,14 @@ function creaQuadrato(number) {
     //evento click
     cell.addEventListener("click", function() {
         
-        cell.classList.toggle("minato");
+        if (cell.classList.contains("bomb")) {
+            grid.innerHTML= `<h2>Boom<h2>`;
+        } else {
+
+            cell.classList.toggle("minato");
+            
+        }
+        
 
     });
 
@@ -60,13 +67,6 @@ runBtn.addEventListener("click", function () {
     grid.innerHTML= "";
     creaGriglia();
 
-    // for (let i = 1; i <= numCell; i++) {
-        
-    //     let cell = creaQuadrato(i);
-    //     cell.innerHTML= i;
-    //     grid.appendChild(cell);
-    
-    // };
 })
 
 function getRandom(min, max) {
