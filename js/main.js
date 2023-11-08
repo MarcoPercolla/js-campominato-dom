@@ -4,6 +4,13 @@ const runBtn = document.getElementById("run");
 const difficultyInput = document.getElementById("difficulty");
 
 
+let bombe = [];
+while (bombe.length<16) {
+    let posizioneBomba = getRandom(1, numCell);
+    bombe.push(posizioneBomba)
+}
+console.log(bombe)
+
 
 function creaQuadrato(number) {
 
@@ -31,6 +38,7 @@ function creaQuadrato(number) {
 }
 
 function creaGriglia() {
+
     
     for (let i = 1; i <= numCell; i++) {
         
