@@ -35,11 +35,13 @@ function creaQuadrato(number) {
         } else if (safe == (numCell - 17)){
             grid.innerHTML= `<img src="https://gifdb.com/images/high/naruto-shippuden-minato-namikazee-versus-obito-uchiha-aeu46u0nkiefu7u5.gif" >`;
             document.getElementById("counter").innerHTML = "HAI VINTO!";
-        } else {
+        } else if (!cell.classList.contains("minato")) {
             cell.classList.toggle("minato");
             safe++;
-            document.getElementById("counter").innerHTML = `<h2>ti mancano ${(numCell - 16) - safe} celle</h2>`
-            console.log(safe)
+            document.getElementById("counter").innerHTML = `<h2>ti mancano ${(numCell - 16) - safe} celle</h2>`;
+            console.log(safe);
+        }else{
+            console.log("gia cliccato");
         }
         
         return safe;
