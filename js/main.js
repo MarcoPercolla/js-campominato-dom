@@ -3,16 +3,7 @@ let grid = document.getElementById("grid");
 const runBtn = document.getElementById("run");
 const difficultyInput = document.getElementById("difficulty");
 let safe = 0;
-// ---
 let bombe = [];
-// while (bombe.length<16) {
-//     let posizioneBomba = getRandom(1, numCell);
-//     if (!(bombe.includes(posizioneBomba))) {
-//         bombe.push(posizioneBomba);
-//     }
-    
-// }
-// console.log(bombe)
 
 // ---
 function creaQuadrato(number) {
@@ -36,9 +27,14 @@ function creaQuadrato(number) {
     cell.addEventListener("click", function() {
           
         if (cell.classList.contains("bomb")) {
-            grid.innerHTML= `<h2>Boom<h2>`;
-        } else if (safe == (numCell - 16)){
-            grid.innerHTML= `<h2>hai vinto<h2>`;
+            // grid.innerHTML= `<img src="https://pa1.aminoapps.com/6988/4631da696bc8a842f7da0835859c6a8b28d8c89cr1-500-240_hq.gif" >`;
+            grid.innerHTML= `<img src="https://qph.cf2.quoracdn.net/main-qimg-537603b4182840c05a01a24e33989634" >`;
+            
+            document.getElementById("counter").innerHTML = "HAI PERSO!";
+
+        } else if (safe == (numCell - 17)){
+            grid.innerHTML= `<img src="https://gifdb.com/images/high/naruto-shippuden-minato-namikazee-versus-obito-uchiha-aeu46u0nkiefu7u5.gif" >`;
+            document.getElementById("counter").innerHTML = "HAI VINTO!";
         } else {
             cell.classList.toggle("minato");
             safe++;

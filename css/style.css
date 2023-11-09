@@ -68,6 +68,19 @@ main{
     
 }
 
+#counter{
+    color: orangered;
+    font-weight: 900;
+}
+
+#grid img{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
 .square {
     border: solid 1px;
     display: flex;
@@ -95,7 +108,8 @@ main{
 .minato{
     
     color: orangered;
-    background-image:  url(https://steamuserimages-a.akamaihd.net/ugc/924808077591780188/9AF4F7C9FA32E495E75FA1EFE23E22E3A7DC8929/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-image: url(https://i.pinimg.com/originals/c3/cd/b4/c3cdb4d6105ea300a36f77f092fdcec6.jpg);
+    /* background-image:  url(https://steamuserimages-a.akamaihd.net/ugc/924808077591780188/9AF4F7C9FA32E495E75FA1EFE23E22E3A7DC8929/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
